@@ -7,7 +7,7 @@ class Form {
   }
 
   setElementsPosition(){
-    this.titleImg.position(120,0)
+    this.titleImg.position(150,0)
     this.input.position(width/2-100,height/2-80)
     this.playButton.position(width/2-90,height/2-20)
     this.greeting.position(width/2-300,height/2-100)
@@ -29,6 +29,23 @@ class Form {
   display(){
     this.setElementsPosition()
     this.setElementsStyle()
+    this.handleMousePressed()
+  }
+
+  handleMousePressed(){
+    this.playButton.mousePressed(
+       () => {
+        this.input.hide()
+        this.playButton.hide()
+        var mensagem = `Bem vindo, ${this.input.value()} <br> aguarde os outros jogadores...`
+        this.greeting.html(mensagem)
+        playerCount++
+        player.name = this.input.value()
+        player.index = playerCount
+        player.addPlayer();
+        player.updateCount(playerCount);
+        player.getDistance();
+     })
   }
 
 }
