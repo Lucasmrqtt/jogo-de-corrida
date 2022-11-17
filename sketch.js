@@ -16,12 +16,12 @@ function preload() {
   backgroundImage = loadImage("./assets/planodefundo.png");
   pista = loadImage("./assets/track.jpg")
   pista2 = loadImage("./assets/track_2.png")
-  carImg1 = loadImage ("/assets/car1.png")
-  carImg2 = loadImage ("/assets/car2.png")
-  blast = loadImage ("/assets/blast.png")
-  fuelImg = loadImage ("/assets/fuel.png")
-  coinImg = loadImage ("/assets/goldCoin.png")
-  lifeImage = loadImage ("/assets/life.png")
+  carImg1 = loadImage ("./assets/car1.png")
+  carImg2 = loadImage ("./assets/car2.png")
+  blast = loadImage ("./assets/blast.png")
+  fuelImg = loadImage ("./assets/fuel.png")
+  coinImg = loadImage ("./assets/goldCoin.png")
+  lifeImage = loadImage ("./assets/life.png")
   obstacle1Image = loadImage ("./assets/obstacle1.png")
   obstacle2Image = loadImage ("./assets/obstacle2.png")
 }
